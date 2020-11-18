@@ -24,7 +24,6 @@ public class BasicSoundbar extends ApplicationAdapter {
 	int WIDTH, HEIGHT;
 	LabelStyle labelStyle;
 	ArrayList<SoundLabel> kit = new ArrayList<SoundLabel>();
-	SoundLabel soundLabel;
 	float volume;
 	float noteX, noteY;
 
@@ -53,8 +52,6 @@ public class BasicSoundbar extends ApplicationAdapter {
 			drum.getLabel().draw(batch,1);
 			batch.draw(drum.getIcon(),drum.getIconX(),drum.getIconY());
 		}
-	}
-	public void drawVolumeBar(){
 	}
 
 	@Override

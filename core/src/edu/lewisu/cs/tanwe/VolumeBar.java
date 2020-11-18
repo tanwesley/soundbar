@@ -16,6 +16,17 @@ import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 
 class VolumeBar {
+    private float volume;
+
+
+    public VolumeBar() {
+        
+    }
+
+    public float getVolume() {
+        return volume;
+    }
+
 
 
 }
