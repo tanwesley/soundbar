@@ -1,25 +1,29 @@
 package edu.lewisu.cs.tanwe;
 
-import java.util.ArrayList;
-
-import com.badlogic.gdx.ApplicationAdapter;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input.Buttons;
-import com.badlogic.gdx.audio.Sound;
-import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.scenes.scene2d.ui.Label;
-import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 
 class VolumeBar {
+    private Texture bar;
+    private Texture icon;
     private float volume;
+    private float barWidth;
+    private float iconWidth;
+    private float iconX;
 
+    public VolumeBar(SpriteBatch batch, float xOrigin, float yOrigin) {
+        this.bar = new Texture("volume_bar.png");
+        this.icon = new Texture("volume_icon.png");
+        this.barWidth = bar.getWidth();
+        this.iconWidth = icon.getWidth();
+        this.volume = 1;
+        this.iconX = xOrigin + barWidth;
 
-    public VolumeBar() {
+        batch.draw(bar,xOrigin,yOrigin);
+        batch.draw(icon,iconX,yOrigin);
+    }
+
+    public void changeVolume() {
         
     }
 

@@ -42,7 +42,7 @@ public class BasicSoundbar extends ApplicationAdapter {
 	public void setupLabelStyle() {
 		labelStyle = new LabelStyle();
 		labelStyle.font = new BitmapFont(Gdx.files.internal("fonts/arial.fnt"));
-		labelStyle.fontColor = new Color(Color.RED);
+		labelStyle.fontColor = new Color(Color.MAGENTA);
 	}
 	/**
 	 * render the soundLabel on the screen
